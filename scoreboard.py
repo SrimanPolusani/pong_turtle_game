@@ -1,7 +1,7 @@
 from turtle import Turtle
 
 
-class Score_board(Turtle):  # Inheriting the turtle object
+class ScoreBoard(Turtle):  # Inheriting the turtle object
     def __init__(self):
         super().__init__()
         self.penup()

@@ -3,7 +3,7 @@ import time
 from turtle import Screen
 from paddle import Paddle
 from ball import Ball
-from score_board import Score_board
+from scoreboard import ScoreBoard
 from ball import COLORS_LST
 
 screen = Screen()
@@ -14,8 +14,8 @@ l_paddle = Paddle((-380, 0))  # left paddle object
 r_paddle = Paddle((380, 0))  # right paddle object
 repeat = True
 ball = Ball()  # ball object
-r_score_turtle = Score_board()  # turtle object for tracking right side score
-l_score_turtle = Score_board()  # turtle object for tracking left side score
+r_score_turtle = ScoreBoard()  # turtle object for tracking right side score
+l_score_turtle = ScoreBoard()  # turtle object for tracking left side score
 
 while r_score_turtle.repeat and l_score_turtle.repeat:
     screen.listen()
